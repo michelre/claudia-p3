@@ -1,0 +1,19 @@
+{
+  "name": "p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Claudia-Marguerie/oc-p3.git"
+  },
+  "author": "Claudia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Claudia-Marguerie/oc-p3/issues"
+  },
+  "homepage": "https://github.com/Claudia-Marguerie/oc-p3#readme"
+}
