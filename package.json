@@ -4,7 +4,8 @@
   "description": "\"\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "sass ./sass/main.scss style.css --watch",
+    "prod": "sass ./sass/main.scss style.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Claudia-Marguerie/oc-p3/issues"
   },
-  "homepage": "https://github.com/Claudia-Marguerie/oc-p3#readme"
+  "homepage": "https://github.com/Claudia-Marguerie/oc-p3#readme",
+  "devDependencies": {
+    "sass": "^1.26.3"
+  }
 }
