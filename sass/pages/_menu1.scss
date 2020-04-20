@@ -89,22 +89,18 @@ section {
         align-items: center; 
         h3 {
             text-align: center;
+            // width: 0px;
+            // color: #3d1319;
+            // &:hover {
+            //     transition: underline 500ms ease;
+            // }
         }
         @media (max-width: 599px) {
             img {
-                width: 30px;
-                height: 1px;
+                width: 70px;
+                // height: 1px;
             }
         }
-        // &__underline {
-        //    ::after {
-        //        display: none;
-        //        width: 0%;
-        //    }
-        //    &:hover {
-        //        width: 100%;
-        //    }
-        // }
         &--la_note {
             font-family: Segoe Print V1;
             img {
@@ -186,3 +182,12 @@ section {
         }
     }
 }
+
+// @keyframes underline {
+//     from {
+//         scale: 0%;
+//     }
+//     to {
+//         scale: 100%;
+//     }
+// }

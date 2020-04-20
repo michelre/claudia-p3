@@ -261,8 +261,7 @@ section .sous-titre h3 {
 }
 @media (max-width: 599px) {
   section .sous-titre img {
-    width: 30px;
-    height: 1px;
+    width: 70px;
   }
 }
 section .sous-titre--la_note {
