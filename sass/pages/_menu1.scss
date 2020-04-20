@@ -33,6 +33,7 @@ h1 {
   
 .menu_description {
     width: 60%;
+    min-width: 480px;
     height: auto;
     // margin-bottom: 200px;
     box-shadow: 0 0 15px lightgrey;
@@ -42,6 +43,7 @@ h1 {
     align-items: center;
     @media (max-width: 599px) {
         width: 80%;
+        min-width: 0;
     }
     &--la_note {
         background-color: #fcdfdb;
@@ -85,6 +87,24 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center; 
+        h3 {
+            text-align: center;
+        }
+        @media (max-width: 599px) {
+            img {
+                width: 30px;
+                height: 1px;
+            }
+        }
+        // &__underline {
+        //    ::after {
+        //        display: none;
+        //        width: 0%;
+        //    }
+        //    &:hover {
+        //        width: 100%;
+        //    }
+        // }
         &--la_note {
             font-family: Segoe Print V1;
             img {
