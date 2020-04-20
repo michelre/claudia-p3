@@ -1,0 +1,139 @@
+// Page menu 1 
+
+@font-face {font-family: "Devonshire-Regular";
+    src: url("fonts/Devonshire-Regular.eot"); 
+    src: url("fonts/Devonshire-Regular.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Devonshire-Regular.svg") format("svg"),
+    url("fonts/Devonshire-Regular.ttf") format("ttf"), 
+    url("fonts/Devonshire-Regular.woff") format("woff"), 
+  }
+  
+@font-face {font-family: "Segoe Print V1";
+    src: url("fonts/Segoe Print V1.eot"); 
+    src: url("fonts/Segoe Print V1.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Segoe Print V1.svg") format("svg"),
+    url("fonts/Segoe Print V1.ttf") format("ttf"), 
+    url("fonts/Segoe Print V1.woff") format("woff"), 
+}
+  
+.container_page_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+  
+.menu_description {
+    width: 60%;
+    min-width: 400px;
+    height: auto;
+    // margin-bottom: 200px;
+    box-shadow: 0 0 15px lightgrey;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    &--la_note {
+        background-color: #fcdfdb;
+        color: #3d1319;
+    }
+}
+  
+.titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0;
+    h2 {
+      margin: 0;
+    }
+    &--la_note {
+        font-family: Devonshire-Regular;
+        font-size: 1.7em;
+        img {
+            width: 30%;
+        }
+    }
+}
+  
+section {
+    width: 80%;
+    margin-bottom: 60px;
+    .sous-titre {
+        font-size: 1.3em;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        &--la_note {
+            font-family: Segoe Print V1;
+            img {
+                width: 25%;
+                height: 8px;
+            }
+        }
+    } 
+    .texte {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1em;
+        // margin-bottom: 0;
+        // height: 40px;
+        p {
+            line-height: 1.2em;
+        }
+        &__plat {
+            max-width: 75%;
+        }
+        &__prix {
+            font-weight: bold;
+        }
+        &--la_note {
+            font-family: Segoe Print V1;
+        }
+    }
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+    // height: 200px;
+    img {
+        height: 42px;
+        margin-right: 15px;
+    }
+    p {
+        font-family: Devonshire-Regular;
+        font-size: 2.2em;
+    }
+}
+
+.btn-retour {
+    width: 15%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: $clr-primary;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 140px;
+    a {
+        text-decoration: none;
+        color: $clr-secondary;
+        &:hover {
+            color: rgba(252, 203, 70, 50%);
+        }
+    }
+}
