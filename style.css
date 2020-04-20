@@ -21,6 +21,11 @@ header {
 #logo {
   width: 260px;
 }
+@media (max-width: 599px) {
+  #logo {
+    width: 220px;
+  }
+}
 
 /* Container */
 .container {
@@ -55,6 +60,11 @@ header {
   transform: scale(1.3);
   opacity: 0.8;
 }
+@media (max-width: 599px) {
+  .menu img {
+    width: 280px;
+  }
+}
 
 .container_prochainement {
   width: 360px;
@@ -68,6 +78,12 @@ header {
   font-size: 2rem;
   color: #FCC946;
   margin: 50px 0px 120px 0px;
+}
+@media (max-width: 599px) {
+  .container_prochainement {
+    width: 250px;
+    font-size: 1.5rem;
+  }
 }
 
 .load {
@@ -116,6 +132,11 @@ footer a {
   color: #FCC946;
   text-decoration: none;
 }
+@media (max-width: 599px) {
+  footer a {
+    font-size: 1.3rem;
+  }
+}
 
 .btn_left {
   margin-left: 3%;
@@ -160,15 +181,24 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 50px;
 }
+@media (max-width: 599px) {
+  h1 {
+    font-size: 1.7em;
+  }
+}
 
 .menu_description {
   width: 60%;
-  min-width: 400px;
   height: auto;
   box-shadow: 0 0 15px lightgrey;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 599px) {
+  .menu_description {
+    width: 80%;
+  }
 }
 .menu_description--la_note {
   background-color: #fcdfdb;
@@ -185,6 +215,11 @@ h1 {
 .titre h2 {
   margin: 0;
 }
+@media (max-width: 599px) {
+  .titre h2 {
+    font-size: 1.2em;
+  }
+}
 .titre--la_note {
   font-family: Devonshire-Regular;
   font-size: 1.7em;
@@ -192,10 +227,20 @@ h1 {
 .titre--la_note img {
   width: 30%;
 }
+@media (max-width: 599px) {
+  .titre--la_note img {
+    width: 25%;
+  }
+}
 
 section {
   width: 80%;
   margin-bottom: 60px;
+}
+@media (max-width: 599px) {
+  section {
+    margin-bottom: 10px;
+  }
 }
 section .sous-titre {
   font-size: 1.3em;
@@ -234,19 +279,34 @@ section .texte--la_note {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
+}
+@media (max-width: 599px) {
+  .final {
+    margin-bottom: 10px;
+  }
 }
 .final img {
-  height: 42px;
+  height: 50px;
   margin-right: 15px;
+}
+@media (max-width: 599px) {
+  .final img {
+    height: 38px;
+  }
 }
 .final p {
   font-family: Devonshire-Regular;
-  font-size: 2.2em;
+  font-size: 2.7em;
+}
+@media (max-width: 599px) {
+  .final p {
+    font-size: 2em;
+  }
 }
 
 .btn-retour {
-  width: 15%;
+  width: 200px;
   height: 40px;
   border-radius: 10px;
   background-color: #579c87;
@@ -255,8 +315,16 @@ section .texte--la_note {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
-  margin-bottom: 140px;
+  margin-top: 70px;
+  margin-bottom: 130px;
+}
+@media (max-width: 599px) {
+  .btn-retour {
+    width: 180px;
+    font-size: 1.5em;
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
 }
 .btn-retour a {
   text-decoration: none;
