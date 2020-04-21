@@ -8,12 +8,12 @@
     url("fonts/Devonshire-Regular.woff") format("woff"), 
   }
   
-@font-face {font-family: "Segoe Print V1";
-    src: url("fonts/Segoe Print V1.eot"); 
-    src: url("fonts/Segoe Print V1.eot?#iefix") format("embedded-opentype"), 
-    url("fonts/Segoe Print V1.svg") format("svg"),
-    url("fonts/Segoe Print V1.ttf") format("ttf"), 
-    url("fonts/Segoe Print V1.woff") format("woff"), 
+@font-face {font-family: "Segoe Print";
+    src: url("fonts/Segoe Print.eot"); 
+    src: url("fonts/Segoe Print.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Segoe Print.svg") format("svg"),
+    url("fonts/Segoe Print.ttf") format("ttf"), 
+    url("fonts/Segoe Print.woff") format("woff"), 
 }
 
 @font-face {font-family: "Croissant One";
@@ -32,9 +32,21 @@
     url("fonts/Cardiff V2.woff") format("woff"), 
 }
 
+@font-face {font-family: "Dancing Script";
+    src: url("fonts/Dancing Script.eot"); 
+    src: url("fonts/Dancing Script.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Dancing Script.svg") format("svg"),
+    url("fonts/Dancing Script.ttf") format("ttf"), 
+    url("fonts/Dancing Script.woff") format("woff"), 
+}
+
 $clr-entree: #c67412;
 $clr-plat: #a56799;
 $clr-dessert: #6e4ccc;
+
+$clr-delice-blue-dark: #0228dd;
+$clr-delice-blue-medium: #0670f3;
+$clr-delice-blue-light: #229df9;
 
 .container_page_menu {
     display: flex;
@@ -72,6 +84,9 @@ h1 {
     &--le_chic {
         background-color: #fff5fe;
     }
+    &--le_delice {
+        background-color: #edefef;
+    }
 }
   
 .titre {
@@ -104,6 +119,15 @@ h1 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    &--le_delice {
+        height: 130px;
+        font-family: Dancing Script;
+        font-size: 2.5em;
+        // color: $clr-delice-blue-light;
+        background: linear-gradient(to right, $clr-delice-blue-dark, $clr-delice-blue-light); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
   
 section {
@@ -129,7 +153,7 @@ section {
             // width: 80%;
             margin-left: 70px;
             margin-right: 70px;
-            font-family: Segoe Print V1;
+            font-family: Segoe Print;
             img {
                 width: 25%;
                 height: 8px;
@@ -148,6 +172,17 @@ section {
             &--dessert {
                 color: $clr-dessert;
             }
+            img {
+                width: 25%;
+                height: 8px;
+            }
+        }
+        &--le_delice {
+            margin-left: 40px;
+            margin-right: 40px;
+            font-family: Segoe Print;
+            font-size: 1em;
+            color: #000000;
             img {
                 width: 25%;
                 height: 8px;
@@ -176,7 +211,7 @@ section {
         &--la_note {
             margin-left: 70px;
             margin-right: 70px;
-            font-family: Segoe Print V1;
+            font-family: Segoe Print;
         }
         &--le_chic {
             margin-left: 110px;
@@ -194,6 +229,11 @@ section {
                 color: $clr-dessert;
                 font-size: 1.1em;
             }
+        }
+        &--le_delice {
+            margin-left: 110px;
+            margin-right: 110px;
+            font-family: Segoe Print;
         }
     }
 }
