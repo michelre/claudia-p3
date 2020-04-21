@@ -55,7 +55,7 @@ h1 {
     width: 60%;
     min-width: 480px;
     height: auto;
-    // margin-bottom: 200px;
+    min-height: 1250px;
     box-shadow: 0 0 15px lightgrey;
     display: flex;
     flex-direction: column;
@@ -97,21 +97,23 @@ h1 {
         }
     }
     &--le_chic {
+        height: 130px;
         font-family: Croissant One;
         font-size: 1.5em;
-        background: linear-gradient(to right, $clr-entree, #6e4ccc); 
-        background-clip: text;
+        background: linear-gradient(to right, $clr-entree, $clr-dessert); 
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
   
 section {
-    width: 80%;
+    width: 100%;
     margin-bottom: 60px;
     @media (max-width: 599px) {
         margin-bottom: 10px;
     }
     .sous-titre {
+        // width: 100%;
         font-size: 1.3em;
         font-weight: bold;
         display: flex;
@@ -124,6 +126,9 @@ section {
             }
         }
         &--la_note {
+            // width: 80%;
+            margin-left: 70px;
+            margin-right: 70px;
             font-family: Segoe Print V1;
             img {
                 width: 25%;
@@ -131,6 +136,8 @@ section {
             }
         }
         &--le_chic {
+            margin-left: 20px;
+            margin-right: 20px;
             font-family: Cardiff V2;
             &--entrée {
                 color: $clr-entree;
@@ -148,6 +155,7 @@ section {
         }
     } 
     .texte {
+        // width: 80%;
         display: flex;
         justify-content: space-between;
         font-size: 1em;
@@ -161,11 +169,18 @@ section {
         }
         &__prix {
             font-weight: bold;
+            &--le_chic {
+                font-size: 1.1em;
+            }
         }
         &--la_note {
+            margin-left: 70px;
+            margin-right: 70px;
             font-family: Segoe Print V1;
         }
         &--le_chic {
+            margin-left: 110px;
+            margin-right: 110px;
             font-family: Cardiff V2;
             &--entrée {
                 color: $clr-entree;

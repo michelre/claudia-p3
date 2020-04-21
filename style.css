@@ -207,6 +207,7 @@ h1 {
   width: 60%;
   min-width: 480px;
   height: auto;
+  min-height: 1250px;
   box-shadow: 0 0 15px lightgrey;
   display: flex;
   flex-direction: column;
@@ -254,15 +255,16 @@ h1 {
   }
 }
 .titre--le_chic {
+  height: 130px;
   font-family: Croissant One;
   font-size: 1.5em;
   background: linear-gradient(to right, #c67412, #6e4ccc);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 section {
-  width: 80%;
+  width: 100%;
   margin-bottom: 60px;
 }
 @media (max-width: 599px) {
@@ -283,6 +285,8 @@ section .sous-titre {
   }
 }
 section .sous-titre--la_note {
+  margin-left: 70px;
+  margin-right: 70px;
   font-family: Segoe Print V1;
 }
 section .sous-titre--la_note img {
@@ -290,6 +294,8 @@ section .sous-titre--la_note img {
   height: 8px;
 }
 section .sous-titre--le_chic {
+  margin-left: 20px;
+  margin-right: 20px;
   font-family: Cardiff V2;
 }
 section .sous-titre--le_chic--entrée {
@@ -319,10 +325,17 @@ section .texte__plat {
 section .texte__prix {
   font-weight: bold;
 }
+section .texte__prix--le_chic {
+  font-size: 1.1em;
+}
 section .texte--la_note {
+  margin-left: 70px;
+  margin-right: 70px;
   font-family: Segoe Print V1;
 }
 section .texte--le_chic {
+  margin-left: 110px;
+  margin-right: 110px;
   font-family: Cardiff V2;
 }
 section .texte--le_chic--entrée {
