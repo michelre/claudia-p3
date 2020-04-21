@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   height: 100%;
   margin: 0;
@@ -175,6 +176,16 @@ footer a {
   src: url("fonts/Segoe Print V1.eot");
   src: url("fonts/Segoe Print V1.eot?#iefix") format("embedded-opentype"), url("fonts/Segoe Print V1.svg") format("svg"), url("fonts/Segoe Print V1.ttf") format("ttf"), url("fonts/Segoe Print V1.woff") format("woff");
 }
+@font-face {
+  font-family: "Croissant One";
+  src: url("fonts/Croissant One.eot");
+  src: url("fonts/Croissant One.eot?#iefix") format("embedded-opentype"), url("fonts/Croissant One.svg") format("svg"), url("fonts/Croissant One.ttf") format("ttf"), url("fonts/Croissant One.woff") format("woff");
+}
+@font-face {
+  font-family: "Cardiff V2";
+  src: url("fonts/Cardiff V2.eot");
+  src: url("fonts/Cardiff V2.eot?#iefix") format("embedded-opentype"), url("fonts/Cardiff V2.svg") format("svg"), url("fonts/Cardiff V2.ttf") format("ttf"), url("fonts/Cardiff V2.woff") format("woff");
+}
 .container_page_menu {
   display: flex;
   flex-direction: column;
@@ -211,6 +222,9 @@ h1 {
   background-color: #fcdfdb;
   color: #3d1319;
 }
+.menu_description--le_chic {
+  background-color: #fff5fe;
+}
 
 .titre {
   display: flex;
@@ -239,6 +253,13 @@ h1 {
     width: 25%;
   }
 }
+.titre--le_chic {
+  font-family: Croissant One;
+  font-size: 1.5em;
+  background: linear-gradient(to right, #c67412, #6e4ccc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 section {
   width: 80%;
@@ -256,9 +277,6 @@ section .sous-titre {
   justify-content: space-between;
   align-items: center;
 }
-section .sous-titre h3 {
-  text-align: center;
-}
 @media (max-width: 599px) {
   section .sous-titre img {
     width: 70px;
@@ -268,6 +286,22 @@ section .sous-titre--la_note {
   font-family: Segoe Print V1;
 }
 section .sous-titre--la_note img {
+  width: 25%;
+  height: 8px;
+}
+section .sous-titre--le_chic {
+  font-family: Cardiff V2;
+}
+section .sous-titre--le_chic--entrée {
+  color: #c67412;
+}
+section .sous-titre--le_chic--plat {
+  color: #a56799;
+}
+section .sous-titre--le_chic--dessert {
+  color: #6e4ccc;
+}
+section .sous-titre--le_chic img {
   width: 25%;
   height: 8px;
 }
@@ -287,6 +321,40 @@ section .texte__prix {
 }
 section .texte--la_note {
   font-family: Segoe Print V1;
+}
+section .texte--le_chic {
+  font-family: Cardiff V2;
+}
+section .texte--le_chic--entrée {
+  color: #c67412;
+  font-size: 1.1em;
+}
+section .texte--le_chic--plat {
+  color: #a56799;
+  font-size: 1.1em;
+}
+section .texte--le_chic--dessert {
+  color: #6e4ccc;
+  font-size: 1.1em;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #3d1319;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  transition: 250ms linear;
+}
+h3::before:focus {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .final {
@@ -321,15 +389,8 @@ section .texte--la_note {
 }
 
 .btn-retour {
-  width: 200px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: #579c87;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.8em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 70px;
   margin-bottom: 130px;
 }
@@ -342,11 +403,22 @@ section .texte--la_note {
   }
 }
 .btn-retour a {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #579c87;
   text-decoration: none;
   color: #FCC946;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-retour a img {
+  width: 20px;
+  margin-right: 10px;
 }
 .btn-retour a:hover {
-  color: rgba(252, 203, 70, 0.5);
+  color: rgba(252, 201, 70, 0.7);
 }
 
 /*# sourceMappingURL=style.css.map */

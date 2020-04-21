@@ -1,4 +1,4 @@
-// Page menu 1 
+// Page menu 1
 
 @font-face {font-family: "Devonshire-Regular";
     src: url("fonts/Devonshire-Regular.eot"); 
@@ -15,7 +15,27 @@
     url("fonts/Segoe Print V1.ttf") format("ttf"), 
     url("fonts/Segoe Print V1.woff") format("woff"), 
 }
-  
+
+@font-face {font-family: "Croissant One";
+    src: url("fonts/Croissant One.eot"); 
+    src: url("fonts/Croissant One.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Croissant One.svg") format("svg"),
+    url("fonts/Croissant One.ttf") format("ttf"), 
+    url("fonts/Croissant One.woff") format("woff"), 
+}
+
+@font-face {font-family: "Cardiff V2";
+    src: url("fonts/Cardiff V2.eot"); 
+    src: url("fonts/Cardiff V2.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Cardiff V2.svg") format("svg"),
+    url("fonts/Cardiff V2.ttf") format("ttf"), 
+    url("fonts/Cardiff V2.woff") format("woff"), 
+}
+
+$clr-entree: #c67412;
+$clr-plat: #a56799;
+$clr-dessert: #6e4ccc;
+
 .container_page_menu {
     display: flex;
     flex-direction: column;
@@ -49,6 +69,9 @@ h1 {
         background-color: #fcdfdb;
         color: #3d1319;
     }
+    &--le_chic {
+        background-color: #fff5fe;
+    }
 }
   
 .titre {
@@ -73,6 +96,13 @@ h1 {
             }
         }
     }
+    &--le_chic {
+        font-family: Croissant One;
+        font-size: 1.5em;
+        background: linear-gradient(to right, $clr-entree, #6e4ccc); 
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
   
 section {
@@ -87,14 +117,6 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: center; 
-        h3 {
-            text-align: center;
-            // width: 0px;
-            // color: #3d1319;
-            // &:hover {
-            //     transition: underline 500ms ease;
-            // }
-        }
         @media (max-width: 599px) {
             img {
                 width: 70px;
@@ -103,6 +125,22 @@ section {
         }
         &--la_note {
             font-family: Segoe Print V1;
+            img {
+                width: 25%;
+                height: 8px;
+            }
+        }
+        &--le_chic {
+            font-family: Cardiff V2;
+            &--entrée {
+                color: $clr-entree;
+            }
+            &--plat {
+                color: $clr-plat;
+            }
+            &--dessert {
+                color: $clr-dessert;
+            }
             img {
                 width: 25%;
                 height: 8px;
@@ -126,6 +164,43 @@ section {
         }
         &--la_note {
             font-family: Segoe Print V1;
+        }
+        &--le_chic {
+            font-family: Cardiff V2;
+            &--entrée {
+                color: $clr-entree;
+                font-size: 1.1em;
+            }
+            &--plat {
+                color: $clr-plat;
+                font-size: 1.1em;
+            }
+            &--dessert {
+                color: $clr-dessert;
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+
+// Underline text animation
+h3 {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background: #3d1319;
+        visibility: hidden;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transform-origin: 0% 50%;
+        transition: 250ms linear;
+        &:focus {
+            visibility: visible;
+            transform: scaleX(1);
         }
     }
 }
@@ -157,15 +232,8 @@ section {
 }
 
 .btn-retour {
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: $clr-primary;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 70px;
     margin-bottom: 130px;
     @media (max-width: 599px) {
@@ -175,10 +243,21 @@ section {
         margin-bottom: 120px;
     }
     a {
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: $clr-primary;
         text-decoration: none;
         color: $clr-secondary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 20px;
+            margin-right: 10px;
+        }
         &:hover {
-            color: rgba(252, 203, 70, 50%);
+            color: rgba(252, 201, 70, 70%);
         }
     }
 }
