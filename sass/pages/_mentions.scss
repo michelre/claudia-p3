@@ -1,0 +1,43 @@
+// Page mentions
+
+.container_mentions {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 30px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.content {
+    border: 2px solid $clr-primary;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    padding: 20px 50px;
+    h2 {
+        text-align: center;
+        color: #000000;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+.item {
+    margin-bottom: 60px;
+    h3 {
+        color: $clr-primary;
+        font-weight: lighter;
+    }
+}
