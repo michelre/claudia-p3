@@ -40,6 +40,14 @@
     url("fonts/Dancing Script.woff") format("woff"), 
 }
 
+@font-face {font-family: "Kaushan Script";
+    src: url("fonts/Kaushan Script.eot"); 
+    src: url("fonts/Kaushan Script.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Kaushan Script.svg") format("svg"),
+    url("fonts/Kaushan Script.ttf") format("ttf"), 
+    url("fonts/Kaushan Script.woff") format("woff"), 
+}
+
 $clr-entree: #c67412;
 $clr-plat: #a56799;
 $clr-dessert: #6e4ccc;
@@ -47,6 +55,9 @@ $clr-dessert: #6e4ccc;
 $clr-delice-blue-dark: #0228dd;
 $clr-delice-blue-medium: #0670f3;
 $clr-delice-blue-light: #229df9;
+
+$clr-palette-dark: #3d923a;
+$clr-palette-light: #beff7f;
 
 .container_page_menu {
     display: flex;
@@ -86,6 +97,9 @@ h1 {
     }
     &--le_delice {
         background-color: #edefef;
+    }
+    &--la_palette {
+        background-color: #fdfffd;
     }
 }
   
@@ -128,6 +142,15 @@ h1 {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    &--la_palette {
+        height: 130px;
+        font-family: Kaushan Script;
+        font-size: 2.5em;
+        // color: $clr-palette-dark
+        background: linear-gradient(90deg, $clr-palette-dark 5%, $clr-palette-light 80%); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
   
 section {
@@ -138,7 +161,7 @@ section {
     }
     .sous-titre {
         // width: 100%;
-        font-size: 1.3em;
+        font-family: Segoe Print;
         font-weight: bold;
         display: flex;
         justify-content: space-between;
@@ -151,15 +174,17 @@ section {
         }
         &--la_note {
             // width: 80%;
+            font-size: 1.3em;
             margin-left: 70px;
             margin-right: 70px;
-            font-family: Segoe Print;
+            // font-family: Segoe Print;
             img {
                 width: 25%;
                 height: 8px;
             }
         }
         &--le_chic {
+            font-size: 1.3em;
             margin-left: 20px;
             margin-right: 20px;
             font-family: Cardiff V2;
@@ -180,7 +205,16 @@ section {
         &--le_delice {
             margin-left: 40px;
             margin-right: 40px;
-            font-family: Segoe Print;
+            font-size: 1em;
+            color: #000000;
+            img {
+                width: 25%;
+                height: 8px;
+            }
+        }
+        &--la_palette {
+            margin-left: 40px;
+            margin-right: 40px;
             font-size: 1em;
             color: #000000;
             img {
@@ -235,6 +269,11 @@ section {
             margin-right: 110px;
             font-family: Segoe Print;
         }
+        &--la_palette {
+            margin-left: 110px;
+            margin-right: 110px;
+            font-family: Segoe Print;
+        }
     }
 }
 
@@ -260,6 +299,7 @@ h3 {
     }
 }
 
+// Only for "La note" 
 .final {
     display: flex;
     justify-content: center;

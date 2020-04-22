@@ -194,6 +194,11 @@ footer a {
   src: url("fonts/Dancing Script.eot");
   src: url("fonts/Dancing Script.eot?#iefix") format("embedded-opentype"), url("fonts/Dancing Script.svg") format("svg"), url("fonts/Dancing Script.ttf") format("ttf"), url("fonts/Dancing Script.woff") format("woff");
 }
+@font-face {
+  font-family: "Kaushan Script";
+  src: url("fonts/Kaushan Script.eot");
+  src: url("fonts/Kaushan Script.eot?#iefix") format("embedded-opentype"), url("fonts/Kaushan Script.svg") format("svg"), url("fonts/Kaushan Script.ttf") format("ttf"), url("fonts/Kaushan Script.woff") format("woff");
+}
 .container_page_menu {
   display: flex;
   flex-direction: column;
@@ -236,6 +241,9 @@ h1 {
 }
 .menu_description--le_delice {
   background-color: #edefef;
+}
+.menu_description--la_palette {
+  background-color: #fdfffd;
 }
 
 .titre {
@@ -281,6 +289,14 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.titre--la_palette {
+  height: 130px;
+  font-family: Kaushan Script;
+  font-size: 2.5em;
+  background: linear-gradient(90deg, #3d923a 5%, #beff7f 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 section {
   width: 100%;
@@ -292,7 +308,7 @@ section {
   }
 }
 section .sous-titre {
-  font-size: 1.3em;
+  font-family: Segoe Print;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -304,15 +320,16 @@ section .sous-titre {
   }
 }
 section .sous-titre--la_note {
+  font-size: 1.3em;
   margin-left: 70px;
   margin-right: 70px;
-  font-family: Segoe Print;
 }
 section .sous-titre--la_note img {
   width: 25%;
   height: 8px;
 }
 section .sous-titre--le_chic {
+  font-size: 1.3em;
   margin-left: 20px;
   margin-right: 20px;
   font-family: Cardiff V2;
@@ -333,11 +350,20 @@ section .sous-titre--le_chic img {
 section .sous-titre--le_delice {
   margin-left: 40px;
   margin-right: 40px;
-  font-family: Segoe Print;
   font-size: 1em;
   color: #000000;
 }
 section .sous-titre--le_delice img {
+  width: 25%;
+  height: 8px;
+}
+section .sous-titre--la_palette {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 1em;
+  color: #000000;
+}
+section .sous-titre--la_palette img {
   width: 25%;
   height: 8px;
 }
@@ -381,6 +407,11 @@ section .texte--le_chic--dessert {
   font-size: 1.1em;
 }
 section .texte--le_delice {
+  margin-left: 110px;
+  margin-right: 110px;
+  font-family: Segoe Print;
+}
+section .texte--la_palette {
   margin-left: 110px;
   margin-right: 110px;
   font-family: Segoe Print;
