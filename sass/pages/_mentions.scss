@@ -18,6 +18,10 @@
     margin-top: 40px;
     margin-bottom: 150px;
     padding: 20px 50px;
+    text-align: justify;
+    @media screen and (max-width: 599px) {
+        padding: 10px 20px;
+    }
     h2 {
         text-align: center;
         color: #000000;

@@ -274,6 +274,7 @@ h1 {
   }
 }
 .titre--le_chic {
+  width: 100%;
   height: 130px;
   font-family: Croissant One;
   font-size: 1.5em;
@@ -282,14 +283,16 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 .titre--le_delice {
+  width: 100%;
   height: 130px;
   font-family: Dancing Script;
   font-size: 2.5em;
-  background: linear-gradient(to right, #0228dd, #229df9);
+  background: linear-gradient(50deg, #0228dd 30%, #229df9 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .titre--la_palette {
+  width: 100%;
   height: 130px;
   font-family: Kaushan Script;
   font-size: 2.5em;
@@ -499,10 +502,6 @@ section .texte--la_palette {
   justify-content: center;
   align-items: center;
 }
-.btn-retour a img {
-  width: 20px;
-  margin-right: 10px;
-}
 .btn-retour a:hover {
   color: rgba(252, 201, 70, 0.7);
 }
@@ -525,6 +524,12 @@ section .texte--la_palette {
   margin-top: 40px;
   margin-bottom: 150px;
   padding: 20px 50px;
+  text-align: justify;
+}
+@media screen and (max-width: 599px) {
+  .content {
+    padding: 10px 20px;
+  }
 }
 .content h2 {
   text-align: center;
