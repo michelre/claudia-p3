@@ -515,11 +515,42 @@ section .texte--la_palette {
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: 250ms linear;
-  background: #579c87;
 }
 .underline_animation:hover:after {
   transform: scaleX(1);
   visibility: visible;
+}
+
+.underline_clr-la_note:after {
+  background: #3d1319;
+}
+
+.underline_clr-le_chic1:after {
+  background: #c67412;
+}
+
+.underline_clr-le_chic2:after {
+  background: #a56799;
+}
+
+.underline_clr-le_chic3:after {
+  background: #6e4ccc;
+}
+
+.underline_clr-le_delice1:after {
+  background: #0228dd;
+}
+
+.underline_clr-le_delice2:after {
+  background: #0670f3;
+}
+
+.underline_clr-le_delice3:after {
+  background: #229df9;
+}
+
+.underline_clr-la_palette:after {
+  background: #3d923a;
 }
 
 .final {
