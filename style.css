@@ -251,13 +251,19 @@ h1 {
   justify-content: center;
   align-items: center;
   margin: 50px 0 20px 0;
+  text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .titre {
+    margin: 40px 0 10px 0;
+  }
 }
 .titre h2 {
   margin: 0;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .titre h2 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 .titre--la_note {
@@ -268,7 +274,7 @@ h1 {
 .titre--la_note img {
   width: 30%;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   .titre--la_note img {
     width: 25%;
   }
@@ -305,7 +311,7 @@ section {
   width: 100%;
   margin-bottom: 60px;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   section {
     margin-bottom: 10px;
   }
@@ -316,8 +322,9 @@ section .sous-titre {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
-@media (max-width: 599px) {
+@media screen and (max-width: 599px) {
   section .sous-titre img {
     width: 70px;
   }
@@ -327,6 +334,12 @@ section .sous-titre--la_note {
   margin-left: 70px;
   margin-right: 70px;
   color: #3d1319;
+}
+@media screen and (max-width: 599px) {
+  section .sous-titre--la_note {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 section .sous-titre--la_note img {
   width: 25%;
@@ -376,6 +389,11 @@ section .texte {
   justify-content: space-between;
   font-size: 1em;
 }
+@media screen and (max-width: 599px) {
+  section .texte {
+    margin: 5px;
+  }
+}
 section .texte p {
   line-height: 1.2em;
 }
@@ -394,10 +412,22 @@ section .texte--la_note {
   font-family: Segoe Print;
   color: #3d1319;
 }
+@media screen and (max-width: 599px) {
+  section .texte--la_note {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
 section .texte--le_chic {
   margin-left: 110px;
   margin-right: 110px;
   font-family: Cardiff V2;
+}
+@media screen and (max-width: 599px) {
+  section .texte--le_chic {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 section .texte--le_chic--entrée {
   color: #c67412;
@@ -416,10 +446,22 @@ section .texte--le_delice {
   margin-right: 110px;
   font-family: Segoe Print;
 }
+@media screen and (max-width: 599px) {
+  section .texte--le_delice {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
 section .texte--la_palette {
   margin-left: 110px;
   margin-right: 110px;
   font-family: Segoe Print;
+}
+@media screen and (max-width: 599px) {
+  section .texte--la_palette {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .underline_animation {
@@ -433,12 +475,12 @@ section .texte--la_palette {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: #579c87;
   visibility: hidden;
   border-radius: 5px;
   transform: scaleX(0);
   transform-origin: 0% 50%;
   transition: 250ms linear;
+  background: #579c87;
 }
 .underline_animation:hover:after {
   transform: scaleX(1);
@@ -494,7 +536,7 @@ section .texte--la_palette {
 .btn-retour a {
   width: 200px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: #579c87;
   text-decoration: none;
   color: #FCC946;
