@@ -438,7 +438,7 @@ section .texte__prix--le_delice {
   font-weight: lighter;
 }
 section .texte__prix--la_palette {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: lighter;
 }
 section .texte--la_note {
@@ -522,7 +522,7 @@ section .texte--la_palette {
 }
 
 .underline_clr-la_note:after {
-  background: #3d1319;
+  background: #f05861;
 }
 
 .underline_clr-le_chic1:after {

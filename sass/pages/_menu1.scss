@@ -49,6 +49,7 @@
 }
 
 $clr-note: #3d1319;
+$clr-note2: #f05861;
 
 $clr-entree: #c67412;
 $clr-plat: #a56799;
@@ -291,7 +292,7 @@ section {
                 font-weight: lighter;
             }
             &--la_palette {
-                font-size: 1.3em;
+                font-size: 1.2em;
                 font-weight: lighter;
             }
         }
@@ -377,7 +378,7 @@ section {
 
 .underline_clr-la_note {
     &:after {
-        background: $clr-note;
+        background: $clr-note2;
     }
 }
 
